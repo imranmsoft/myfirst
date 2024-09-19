@@ -1,10 +1,14 @@
-name: First Workflow
-on: workflow_dispatch
+name: First Workflow  # Name of the workflow
+
+on: workflow_dispatch  # The workflow will run when manually triggered via GitHub's UI
+
 jobs:
-  first-job: 
-    runs-on: macOS
+  first-job:  # Name of the job
+    runs-on: macOS  # This job will run on a macOS runner
+    
     steps:
-      - name: Print greeting
-        run: echo "Hello World"
-      - name: Print goodbye
-        run: echo "Done - bye!"
+      - name: Print greeting  # First step: Print a greeting message
+        run: echo "Hello World"  # Command that will be run in the shell (prints "Hello World")
+        
+      - name: Print goodbye  # Second step: Print a goodbye message
+        run: echo "Done - bye!"  # Command that will be run in the shell (prints "Done - bye!")
