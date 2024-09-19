@@ -4,7 +4,7 @@ on: workflow_dispatch  # The workflow will run when manually triggered via GitHu
 
 jobs:
   first-job:  # Name of the job
-    runs-on: macOS  # This job will run on a macOS runner
+    runs-on: ubuntu-latest  # This job will run on a macOS runner
     
     steps:
       - name: Print greeting  # First step: Print a greeting message
